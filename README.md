@@ -12,8 +12,8 @@ et dans des formats différents (analyse comparative difficile).
 L'Arcep a donc développé un script de récupération quotidienne et d'harmonisation des données
 qu'elle met ici à disposition.
 
-Une [cartorgaphie minimaliste](https://ARCEP-dev.github.io/siteshs) est également mise à disposition
-et permet de visualiser cet historique des pannes à compter du 26 octobre 2020.
+Une [cartorgaphie minimaliste](https://ARCEP-dev.github.io/siteshs/index.html) est également mise à disposition
+et permet de visualiser cet historique des pannes.
 
 ## Contacts
 
