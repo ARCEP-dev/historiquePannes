@@ -41,10 +41,15 @@ Les fichiers publiées par les opérateurs:
 
 ## Utilisation
 
+Utiliser Python3 pour exécuter le fichier `sites.sh` avec le chemin d'export comme premier paramètre:
 
-## Installation du job cron
+```bash
+python3 siteshs.py /export/path/
+```
+
+## Installation en tant que job cron
 
 - Sous Linux, simplement ajouter la ligne suivante dans votre fichier [crontab](https://man7.org/linux/man-pages/man5/crontab.5.html):
 ```bash
-13 6 * * * root python3 /siteshs.py /dumps/ >> /var/log/cron.log 2>&1
+13 6 * * * root python3 /path/to/repo/siteshs.py /export/path/ >> /var/log/cron.log 2>&1
 ```
