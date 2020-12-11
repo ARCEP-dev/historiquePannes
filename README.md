@@ -26,7 +26,7 @@ Les fichiers publiées par les opérateurs:
 
 | Opérateur        | URL |
 |------------------|-----|
-| Free             | https://mobile.free.fr/moncompte/index.php?page=csv-antennes-relais-indisponibles |
+| Free             | https://mobile.free.fr/account/antennes-relais-indisponibles.csv |
 | Orange           | https://suivi-des-incidents.orange.fr/liste_des_antennes_en_panne.csv |
 | SFR              | https://static.s-sfr.fr/media/export-arcep/siteshorsservices.csv |
 | Bouygues Telecom | http://antennesindisponibles.bouyguestelecom.fr/antennesindisponibles.xls |
@@ -46,7 +46,7 @@ Les fichiers publiées par les opérateurs:
 
 ## Installation du job cron
 
-- Simplement ajouter la ligne suivante dans votre fichier crontab:
+- Sous Linux, simplement ajouter la ligne suivante dans votre fichier [crontab](https://man7.org/linux/man-pages/man5/crontab.5.html):
 ```bash
 13 6 * * * root python3 /siteshs.py /dumps/ >> /var/log/cron.log 2>&1
 ```
