@@ -1,15 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# Auteurs: Romain MAZIERE and Gaspard FEREY (Arcep)
+#
+# Processus de récupération des sites indisponibles de France métropolitaine
+# publiés par les opérateurs et sauvegarde des données uniformisées
+# aux formats CSV, JSON et GeoJSON.
+# 
+# Nécessite Python 3.7
 
-# Romain MAZIERE and Gaspard FEREY (ARCEP)
-# Workflow to generate the shapefiles for the opendata
-# Requires Python 3.7
 
 # Liste des opérateurs avec les urls de téléchargement des fichiers, les formats ainsi que la correspondance des colonnes
 operateurs = [
   {
     "name":"free",
-    "url": "https://mobile.free.fr/moncompte/index.php?page=csv-antennes-relais-indisponibles",
+    "url": "https://mobile.free.fr/account/antennes-relais-indisponibles.csv",
     "type": "csv",
     "separator": ",",
     "skipheader":0,

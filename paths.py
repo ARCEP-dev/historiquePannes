@@ -1,9 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
+# Auteurs: Romain MAZIERE and Gaspard FEREY (Arcep)
+#
+# Processus de récupération des sites indisponibles de France métropolitaine
+# publiés par les opérateurs et sauvegarde des données uniformisées
+# aux formats CSV, JSON et GeoJSON.
+# 
+# Nécessite Python 3.7
 
-# Romain MAZIERE and Gaspard FEREY (ARCEP)
-# Workflow to generate the shapefiles for the opendata
-# Requires Python 3.7
 
 from os import path, mkdir, sep
 from operators import operateurs
