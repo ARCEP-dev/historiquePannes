@@ -36,15 +36,22 @@ Les fichiers publiées par les opérateurs:
 
 ## Bibliothèques
 
+- [NumPy](https://numpy.org/)
+- [pandas](https://pandas.pydata.org/)
 - [GeoPandas](https://geopandas.org)
-
 
 ## Utilisation
 
-Utiliser Python3 pour exécuter le fichier `siteshs.py` avec le chemin d'export comme premier paramètre:
+Utiliser Python3 pour exécuter le fichier `siteshs.py` avec le chemin d'export comme premier paramètre :
 
 ```bash
 python3 siteshs.py /export/path/
+```
+
+Alternativement, pour appliquer l'uniformisation à des fichiers téléchargés préalablement (architecture précisée dans le fichier [paths.py](paths.py) à respecter), préciser en dernier argument la date des fichiers auxquels appliquer le traitement :
+
+```bash
+python3 siteshs.py /export/path/ 2021-01-01
 ```
 
 ## Installation en tant que job cron
