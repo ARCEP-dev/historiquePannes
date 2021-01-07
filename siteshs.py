@@ -20,10 +20,10 @@ from paths import PathHandler
 
 # Si on fournit un 5ème argument (date), utiliser les fichiers préalablement sauvegardés
 # Sinon télécharger les fichiers à la date d'aujourd'hui
-from_download = len(sys.argv) < 5
+from_download = len(sys.argv) < 3
 
 # La date sur laquelle tourner
-datename = str(date.today()) if from_download else sys.argv[4]
+datename = str(date.today()) if from_download else sys.argv[2]
 
 print("")
 print("################################################")
