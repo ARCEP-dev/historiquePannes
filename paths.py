@@ -41,15 +41,15 @@ class PathHandler:
         create_if_not_exists(self.root+sep+'all'+sep+date)
         # Création d'un répertoire par opérateur
         for op in operateurs:
-            create_if_not_exists(self.root+sep+op['name'])
+            create_if_not_exists(self.root+sep+op['code'])
             create_if_not_exists(self.op_folder(op,date))
 
     def date(self, date):
         return date if date else self.default_date
     def op_folder(self, op, date=None):
-        return self.root+sep+op['name']+sep+self.date(date)
+        return self.root+sep+op['code']+sep+self.date(date)
     def op_path(self, op, suffix, date=None):
-        return self.op_folder(op,date)+sep+self.date(date)+'_'+op['name']+suffix
+        return self.op_folder(op,date)+sep+self.date(date)+'_'+op['code']+suffix
     def all_path(self, suffix, date=None):
         return self.root+sep+'all'+sep+self.date(date)+sep+self.date(date)[0:10]+suffix
     def raw_path(self, op, date=None):
