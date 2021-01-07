@@ -32,7 +32,7 @@ Les fichiers publiées par les opérateurs:
 
 ## Langages
 
-- [Python3](https://www.python.org/)
+- [Python3](https://www.python.org/) (développé, utilisé et testé exclusivement avec la [version 3.7](https://www.python.org/downloads/release/python-370/))
 
 ## Bibliothèques
 
