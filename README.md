@@ -13,7 +13,6 @@ Une [cartorgaphie minimaliste](https://ARCEP-dev.github.io/siteshs/index.html) e
 ## Contacts
 
 - Gaspard FEREY (Arcep) - gaspard [point] ferey [chez] arcep [point] fr
-- Romain MAZIERE (Arcep) - romain [point] maziere [chez] arcep [point] fr
 
 ## Open Data
 
