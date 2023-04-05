@@ -8,7 +8,7 @@ Ces données sont actuellement délivrées dans un format brut (souvent sans vis
 
 Afin de faciliter l'utilisation de ces sources de données, l'Arcep a donc développé un script de récupération et d'harmonisation des données qu'elle met ici à disposition.
 
-Une [cartorgaphie minimaliste](https://ARCEP-dev.github.io/siteshs/index.html) est également mise à disposition et permet de visualiser un historique de ces pannes.
+Une [cartographie minimaliste](https://ARCEP-dev.github.io/siteshs/index.html) est également mise à disposition et permet de visualiser un historique de ces pannes.
 
 ## Contacts
 
