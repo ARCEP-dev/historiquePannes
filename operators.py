@@ -88,21 +88,32 @@ operateurs = [
   {
     'name':'Bouygues Telecom',
     'code':'bytel',
-    'url': 'http://antennesindisponibles.bouyguestelecom.fr/antennesindisponibles.xls',
-    'type': 'xls',
-    'excelsheet': 0,
-    'excelheader': 4,
+    'url': 'https://www.bouyguestelecom.fr/static/com/assets/reseau/siteshs/downloads/antennesindisponibles.csv',
+    'type': 'csv',
+    'separator': ';',
     'skipheader':0,
     'skipfooter': 0,
     'structure':{
-      "CODE POSTAL": 'code_postal',
-      "COMMUNE"    : 'commune',
-      "X (L93)"    : 'x',
-      "Y (L93)"    : 'y',
-      "Service Voix\n(2G et 3G Hors Service)": 'voix',
-      "Service d'accès à Internet et Voix sur LTE\n(3G et 4G Hors Service)": 'data'
+      "Code SI"    : 'code_site',
+      "Commune"    : 'commune',
+      "Code INSEE" : 'code_insee',
+      "Lat"        : 'lat',
+      "Lon"        : 'long',
+      "2Gvoix"     : 'voix2g',
+      "3Gvoix"     : 'voix3g',
+      "3Gdata"     : 'data3g',
+      "4Gdata"     : 'data4g',
+      "5Gdata"     : 'data5g',
+      "voix"       : 'voix',
+      "data"       : 'data',
+      "raison"     : 'raison',
+      "détail"     : 'detail',
+      "début"      : 'debut',
     },
-    'reformatting':{}
+    'reformatting':{
+        'debut':{'match':'(.*)' , 'format':'{0}'},
+        'fin'  :{'match':'([0-9\-]*) (.*)' , 'format':'{0}'},
+    }
   }
 ]
 
